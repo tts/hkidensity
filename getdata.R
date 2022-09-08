@@ -72,6 +72,7 @@ m_b <- leaflet(pop_in_distr) %>%
   addProviderTiles(
     "OpenStreetMap.Mapnik"
   ) %>%
+  addTiles(attribution = " data: Population grid of Helsinki metropolitan area. Helsingin seudun ympäristöpalvelut HSY.") %>% 
   addPolygons(weight = 0.3, 
               fillColor = ~pal(median_dens), 
               fillOpacity = 1,
